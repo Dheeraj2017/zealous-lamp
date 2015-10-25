@@ -1,0 +1,48 @@
+for making the form and taking the input from the user 
+1) first take the input controls 
+2) options
+   ->text
+   ->password
+   ->email
+first we take the name and is important as we re login  in the system 
+the name must match with the name which we enter earlier at the time of
+sign up.
+then second part password: note that the password is only hides but not 
+encrypt the password so be carefull with this 
+and last is the email which i required for login 
+
+we need a submit button
+
+3)form element controls where and how the information is sent
+4)where is controlled by 'action' parameter
+    - Defaults back to the same "page"
+5)how is controlled by 'method' parameter
+   -get puts from data in the URL
+       >visible and replayable
+   -post puts from data in the header
+       >Hidden behind the scenes
+
+<form method='post'>
+  ....Input controls
+</form>
+if the method='get' it will get the input from the user and send to server side and again paste it to the url and display the contents and space is denoted by
+'%'
+
+if method='post' 
+
+so what user type and send to the server side ??
+
+there is no action parameter in the form tag because by defauls it goes back to the same page.
+but action is used to redirect for the another page for the next steps 
+after u submit u want to go for the different page we can use the action parameter
+
+*********************************************************
+Reading information on server:
+>information is available in request.form collection
+  -Names match the names on the input controls
+   ----------------------------------------
+  |   <input type='text' name='answer' />  |
+   ----------------------------------------
+ 
+name=request.form['answer']
+
